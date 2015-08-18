@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+var fs = require("fs"),
+    randomrow = require("../"),
+    argv = process.argv.slice(2);
+
+if (!argv.length && process.stdin.isTTY) {
+  docs();
+} else {
+  var stream = ((argv[0] && fs.createReadStream(argv[0])) || process.stdin);
+  randomrow(stream);
+}
+
+function docs(){
+  console.log('randomrow\n===\n');
+  console.log('randomrow [file]\n');
+  console.log('somethingthatoutputsacsv | randomrow\n');
+}

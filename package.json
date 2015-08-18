@@ -1,0 +1,30 @@
+{
+  "name": "randomrow",
+  "version": "1.0.0",
+  "description": "Print a randow row from a CSV.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/veltman/randomrow.git"
+  },
+  "author": "Noah Veltman (@veltman)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/veltman/randomrow/issues"
+  },
+  "homepage": "https://github.com/veltman/randomrow",
+  "preferGlobal": true,
+  "bin": {
+    "randomrow": "./bin/randomrow"
+  },
+  "dependencies": {
+    "csv-parse": "^1.0.0",
+    "knuth-shuffle": "^1.0.1"
+  }
+}
