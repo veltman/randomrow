@@ -1,6 +1,6 @@
 {
   "name": "randomrow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Print a randow row from a CSV.",
   "main": "index.js",
   "directories": {
